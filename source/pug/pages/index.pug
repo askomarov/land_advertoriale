@@ -1,0 +1,29 @@
+extends ../base/layout
+include ../base/promo
+include ../base/publishSection
+include ../base/benefitsSection
+include ../base/orderSection
+include ../base/flagsSection
+include ../base/contactSection
+include ../base/faqSection
+
+
+block variables
+  - const title = "Advertoriale"
+  - const wrapperMods = ""
+  - const hasHeader = true
+  - const headerMods = ""
+  - const hasFooter = true
+  - const footerMods = ""
+  - const currentPage = 0
+
+block main
+  main.main
+    +promo()
+    +publishSection()
+    +benefitsSection()
+    +orderSection()
+    +flagsSection()
+    +contactSection()
+    +faqSection()
+

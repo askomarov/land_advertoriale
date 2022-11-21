@@ -1,0 +1,53 @@
+mixin flagsSection()
+  -
+    var flagsList = [
+      {
+        flag: "uk",
+        lang: "English",
+        stat: 25000,
+      },
+      {
+        flag: "es",
+        lang: "English",
+        stat: 25000,
+      },
+      {
+        flag: "ger",
+        lang: "English",
+        stat: 25000,
+      },
+      {
+        flag: "mol",
+        lang: "English",
+        stat: 25000,
+      },
+      {
+        flag: "por",
+        lang: "English",
+        stat: 25000,
+      },
+      {
+        flag: "fin",
+        lang: "English",
+        stat: 25000,
+      },
+      {
+        flag: "swed",
+        lang: "English",
+        stat: 25000,
+      },
+      {
+        flag: "fr",
+        lang: "English",
+        stat: 25000,
+      },
+    ]
+  section.flags-section.section
+    .container
+      h2.flags-section__title Publish in 80 GEOs
+      .country-list
+        each item in flagsList
+          .country-list__item
+            +img('flag', `${item.flag}`, 'png', 120, 120, `flag`).country-list__item-img
+            p.country-list__item-lang= item.lang
+            p.country-list__item-stat= item.stat

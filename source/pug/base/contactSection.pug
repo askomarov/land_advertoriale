@@ -1,0 +1,33 @@
+mixin contactSection()
+  -
+    var featList = [
+      {
+        modif: "prices",
+        text: "Competitive Prices",
+      },
+      {
+        modif: "premium",
+        text: "Premium Audience"
+      },
+      {
+        modif: "traffic",
+        text: "Quick Traffic"
+      },
+      {
+        modif: "target",
+        text: "Target Audience",
+      },
+      {
+        modif: "brand",
+        text: "Branding & Leads",
+      }
+    ]
+
+  section.contact-section.section(id="contact")
+    .container.contact-section__container
+      .contact-section__col
+        h2.contact-section__title Contact With Us
+        p.contact-section__text Sit voluptatem accusantium doloremque laudantium
+        +contact-feat-list().contact-section__feat-list
+      .contact-section__col
+        +form()

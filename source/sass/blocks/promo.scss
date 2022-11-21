@@ -1,0 +1,111 @@
+.promo {
+  text-align: center;
+  color: var(--color-white);
+  padding-top: 60px;
+  background: rgba(57, 57, 57, 0.85);
+
+  @media (min-width: $width-tablet) {
+    padding-top: 80px;
+    padding-bottom: 260px;
+    background: transparent;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 120px;
+    padding-bottom: 460px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: clamp(1rem, 4vw, rem(66px));
+    line-height: rem(80px);
+    margin-bottom: rem(12px);
+  }
+
+  p {
+    font-weight: 500;
+    font-size: rem(24px);
+    font-size: clamp(1rem, 4vw, rem(24px));
+    line-height: rem(29px);
+    max-width: 740px;
+    margin-bottom: rem(44px);
+    margin-inline: auto;
+  }
+}
+
+.promo__btns {
+  display: inline-flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: rem(40px);
+  margin-bottom: rem(100px);
+
+  .app-button {
+    flex: 0 0 243px;
+    padding: 10px 47px;
+    height: 50px;
+  }
+}
+
+.promo__feat-list {
+  display: grid;
+  align-items: start;
+  justify-content: center;
+  grid-template-columns: 170px;
+  gap: 2rem;
+
+  @media (min-width: $width-mobile-h) {
+    grid-template-columns: repeat(2, 170px);
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+    p {
+      font-weight: 700;
+      font-size: rem(20px);
+      line-height: rem(24px);
+    }
+  }
+
+  @media (min-width: 1120px) {
+    gap: 6rem;
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+.promo__feat-list-item {
+  &::before {
+    background-image: url("../img/promo-feat/feat-1.png");
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.promo__feat-list-item--premium {
+  &::before {
+    background-image: url("../img/promo-feat/feat-2.png");
+  }
+}
+
+.promo__feat-list-item--traffic {
+  &::before {
+    background-image: url("../img/promo-feat/feat-3.png");
+  }
+}
+
+.promo__feat-list-item--target {
+  &::before {
+    background-image: url("../img/promo-feat/feat-4.png");
+  }
+}

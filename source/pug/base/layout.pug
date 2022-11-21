@@ -1,0 +1,35 @@
+doctype html
+
+include ../base/mixins
+include ../base/header
+include ../base/footer
+
+block variables
+
+html(lang="en")
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="description", content="Eliteremoters")
+    meta(name="msapplication-TileColor", content="#3b2291")
+    meta(name="theme-color", content="#ffffff")
+
+
+    link(rel="stylesheet", href="css/style.min.css")
+
+  body
+    +sprite()
+    .wrapper(class=wrapperMods)
+      if (hasHeader)
+        +header(headerMods, currentPage)
+
+      block main
+
+      if (hasFooter)
+        +footer(footerMods)
+
+    block modals
+
+    script(src="js/main.min.js")

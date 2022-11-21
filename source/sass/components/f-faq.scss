@@ -1,0 +1,86 @@
+.f-faq {
+  background: #f2f2f2;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.f-faq__item {
+  position: relative;
+  border-bottom: 1px solid #e9e8e8;
+}
+
+.f-faq__item summary {
+  display: flex;
+  align-items: center;
+
+
+  &::before {
+    display: inline-block;
+    content: "Q";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0 22px;
+  }
+
+  &::marker,
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.f-faq__item summary span {
+  padding: 10px 24px 13px 34px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+
+  &::after {
+    content: "+";
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #000000;
+    justify-self: stretch;
+  }
+}
+
+.f-faq__item-icon {
+  transition: all 0.1s ease 0s;
+}
+
+.f-faq__item[open] > {
+  summary {
+    color: var(--text-black-color);
+    border-bottom: 1px solid #000000;
+  }
+
+  summary::after {
+    transform: rotate(180deg);
+    transform-origin: center;
+  }
+}
+
+.f-faq__item-content {
+  padding: rem(20px);
+}

@@ -1,0 +1,48 @@
+.tabs-controls {
+  border: 2px solid var(--primary-color-500);
+  border-radius: 4px;
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.tabs-controls__button {
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--primary-color-500);
+  padding: 6px;
+
+  @media (min-width: $width-mobile-h) {
+    padding: 6px 40px;
+  }
+
+  &.is-active {
+    color: var(--color-white);
+  }
+
+  &.is-active[data-index="1"] {
+    ~.tabs-controls__active-tab {
+      grid-column: 2/3;
+      right: initial;
+      left: 0;
+    }
+  }
+}
+
+.tabs-controls__active-tab {
+  background: linear-gradient(180deg, #ff8447 0%, #ff5500 100%);
+  border-radius: 4px;
+  height: calc(100% + 4px);
+  position: absolute;
+  z-index: 1;
+  width: calc(100% + 2px);
+  top: -2px;
+  right: 0;
+  grid-column: 1/2;
+}

@@ -1,0 +1,27 @@
+mixin offer-card(img)
+  .offers-list__card.offer-card
+    a(href="#").offer-card__img-wrap
+      +imgWebp('offer',`offer-card-img-${img}`, 'png', 270, 222, 'preview img alt')
+    .offer-card__content
+      header.offer-card__header
+        .offer-card__user
+          img.offer-card__user-img(src='img/users/img-user-1.png' width='36' height='36' alt='user logo')
+          span.offer-card__user-title Wasim Mehmood
+          .offer-card__user-raiting
+            img.offer-card__user-raiting-icon(src='img/icons/icon-star-filled.svg' width='13' height='13' alt='user raiting')
+            span.offer-card__user-raiting-value 5.0
+            span.offer-card__user-raiting-voat (192)
+        .offer-card__header-like-icon
+          img(src='img/icons/icon-heart.svg' width='18' height='16' alt='icon heart')
+      a(href="#").offer-card__description
+        h2 Design Responsive, SEO friendly &amp; Fast Loading WordPress website
+      .offer-card__tags
+        a(href="#").offer-card__tags-tag
+          h3 ECommerce Webiste
+        a(href="#").offer-card__tags-tag
+          h3 Logo
+        a(href="#").offer-card__tags-tag
+          h3 Design
+    footer.offer-card__footer
+      span.offer-card__price Starting for $15
+      a(href="#").offer-card__btn.main-btn.main-btn--primary Order Now

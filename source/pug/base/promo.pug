@@ -1,0 +1,32 @@
+mixin promo()
+  -
+    var featList = [
+      {
+        modif: "prices",
+        text: "Competitive Prices",
+      },
+      {
+        modif: "premium",
+        text: "Premium Audience"
+      },
+      {
+        modif: "traffic",
+        text: "Targeted Traffic"
+      },
+      {
+        modif: "target",
+        text: "Target Audience",
+      }
+    ]
+
+  section.promo
+    .container
+      h1 Creste-ti Afacerea in Romania
+      p Publica advertoriale pe site-urile de top din RomaniaPublica advertoriale pe site-urile de top din Romania
+      .promo__btns
+        +appButton('primary', 'btn', '#', 'Publica')
+        +appButton('secondary', 'btn', '#', 'Contact us')
+      ul.promo__feat-list
+        each item in featList
+          li.promo__feat-list-item(class=`promo__feat-list-item--${item.modif}`)
+            p= item.text

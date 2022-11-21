@@ -1,0 +1,53 @@
+mixin orderSection()
+  -
+    var orderTable = [
+      {
+        price: "$150",
+        link: "Hotnews.ro",
+        country: "Romania",
+        flag: "ro",
+        one: 90,
+        two: 77,
+        three: 93,
+        fourth: 16,
+      },
+      {
+        price: "$150",
+        link: "Hotnews.ro",
+        country: "Romania",
+        flag: "ro",
+        one: 90,
+        two: 77,
+        three: 93,
+        fourth: 16,
+      },
+      {
+        price: "$150",
+        link: "Hotnews.ro",
+        country: "Romania",
+        flag: "ro",
+        one: 90,
+        two: 77,
+        three: 93,
+        fourth: 16,
+      },
+    ]
+  section.order-section.section(id="ordernow")
+    .container
+      h2.order-section__title Order Simple Way
+      p.order-section__subtitle Sit voluptatem accusantium doloremque laudantium
+      .order-table
+        each item in orderTable
+          .order-table__row.order-item
+            +appButton('primary', 'button', 'href', 'Buy').order-item__btn
+            p= item.price
+            p.order-item__link= item.link
+            p= item.country
+            +img('flag', `flag-${item.flag}`, 'png', 36, 36, `${item.country}`).order-item__img
+            p.order-item__country-code= item.flag
+            p.order-item__stat= item.one
+            p.order-item__stat= item.two
+            p.order-item__stat= item.three
+            p.order-item__stat= item.fourth
+
+      +appButton('ghost', 'button', 'href', 'PUBLICA IN 2000 SITEURI').publish-section__button-publica

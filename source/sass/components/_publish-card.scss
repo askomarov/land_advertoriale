@@ -1,0 +1,49 @@
+.publish-card {
+  position: relative;
+  background: #ffffff;
+  border: 3px solid #e9e9e9;
+  border-radius: 4px;
+  padding: rem(20px) rem(19px) rem(38px);
+  text-align: center;
+
+  .app-button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 7px;
+    width: 140px;
+    background: linear-gradient(180deg, #ff8447 0%, #ff5500 100%);
+  }
+}
+
+.publish-card__img-wrap {
+  border-radius: 4px;
+  overflow: hidden;
+  width: 226px;
+  aspect-ratio: 226/138;
+  height: auto;
+  width: 100%;
+  max-width: 226px;
+  margin-inline: auto;
+  position: relative;
+  margin-bottom: rem(24px);
+
+  img {
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+  }
+}
+
+.publish-card__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--text-black-color);
+  margin-bottom: rem(35px);
+}

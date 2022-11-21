@@ -1,0 +1,11 @@
+include ../trending/offer-card
+
+mixin trending-offers()
+  section.trending-offers.sec-main#trending
+    .trending-offers__container.container
+      h2.trending-offers__title People like also
+      .trending-offers__offers-list.offers-list
+        +offer-card(1)
+        +offer-card(1)
+        +offer-card(1)
+        +offer-card(1)

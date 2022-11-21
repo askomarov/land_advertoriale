@@ -1,0 +1,14 @@
+.logo__word {
+  font-weight: 400;
+  font-size: rem(30px);
+  line-height: 1;
+  margin-right: rem(8px);
+}
+
+.logo__nums {
+  font-size: rem(30px);
+  font-weight: 700;
+  background: linear-gradient(180deg, #e15f1e 25%, #ff5500 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

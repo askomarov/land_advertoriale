@@ -1,0 +1,23 @@
+.faq-section {
+  padding-top: 64px;
+  padding-bottom: 120px;
+  background-color: var(--color-white);
+}
+
+.faq-section__title {
+  margin-bottom: rem(24px);
+}
+
+.faq-section__text {
+  margin-bottom: rem(50px);
+}
+
+.faq-section__faq-list {
+  text-align: left;
+}
+
+.faq-list {
+  display: grid;
+  align-items: start;
+  gap: rem(30px);
+}

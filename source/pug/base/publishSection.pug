@@ -1,0 +1,46 @@
+mixin publishSection()
+  -
+    var tabs = [
+      {
+        active: true,
+        text: "General "
+      },
+      {
+        active: false,
+        text: "Premium"
+      }
+    ]
+  section.publish-section.section(id="publica")
+    .container
+      h2 PUBLICA PE 2500+ SITE-URI IN ROMANIA
+      p Sit voluptatem accusantium doloremque laudantium
+      .publish-tabs(data-tabs="parent")
+        .publish-tabs__tabs-controls.tabs-controls(data-tabs="controls")
+          each tab in tabs
+            button.tabs-controls__button(type="button" class!=tab.active ? 'is-active' : '', data-tabs="control")
+              span= tab.text
+          .tabs-controls__active-tab
+        .publish-tabs__tabs-content(data-tabs="content")
+          // tab 1
+          .publish-tabs__cards-list(data-tabs="element")
+            +publishCard('hot-news', 'Hotnews.ro', 'Hotnews.ro')
+            +publishCard('antena', 'Hotnews.ro', 'Hotnews.ro')
+            +publishCard('capital', 'ww.capital.ro', 'ww.capital.ro')
+            +publishCard('dc-news', 'www.dcnews.ro', 'www.dcnews.ro')
+            +publishCard('evzro', 'Hotnews.ro', 'Hotnews.ro')
+            +publishCard('liber', 'Hotnews.ro', 'Hotnews.ro')
+            +publishCard('media2', 'Hotnews.ro', 'Hotnews.ro')
+            +publishCard('mediafax', 'Hotnews.ro', 'Hotnews.ro')
+
+          // tabs 2
+          .publish-tabs__cards-list(data-tabs="element")
+            +publishCard('profit', 'Hotnews', 'Hotnews')
+            +publishCard('prosport', 'www.prosport.ro', 'www.prosport.ro')
+            +publishCard('sport-ro', 'www.sport.ro', 'www.sport.ro')
+            +publishCard('ziarul', 'Hotnews', 'Hotnews')
+            +publishCard('dc-news', 'www.dcnews.ro', 'www.dcnews.ro')
+            +publishCard('media2', 'Hotnews.ro', 'Hotnews.ro')
+            +publishCard('antena', 'Hotnews.ro', 'Hotnews.ro')
+            +publishCard('evzro', 'Hotnews.ro', 'Hotnews.ro')
+
+      +appButton('ghost', 'button', 'href', 'PUBLICA IN 2000 SITEURI').publish-section__button-publica

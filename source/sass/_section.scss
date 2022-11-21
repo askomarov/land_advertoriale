@@ -1,0 +1,15 @@
+.section {
+  text-align: center;
+
+  h2 {
+    font-weight: 700;
+    font-size: clamp(1.2rem, 3vw, rem(44px));
+    line-height: rem(54px);
+  }
+
+  h2 + p {
+    font-weight: 700;
+    font-size: clamp(1rem, 2.5vw, rem(18px));
+    line-height: 22px;
+  }
+}

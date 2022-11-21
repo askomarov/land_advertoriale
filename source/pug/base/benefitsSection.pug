@@ -1,0 +1,34 @@
+mixin benefitsSection()
+  -
+    var featList = [
+      {
+        mod: "seo",
+        title: "SEO",
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
+      },
+      {
+        mod: "brand",
+        title: "BRANDING",
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium"
+      },
+      {
+        mod: "leads",
+        title: "LEADS",
+        text: "TSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium"
+      },
+      {
+        mod: "authority",
+        title: "HIGH AUTHORITY",
+        text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium",
+      }
+    ]
+
+  section.benefits-section.section(id="benefits")
+    .container
+      h2.benefits-section__title Advertorials 365 Benefits
+
+      ul.benefits-section__feat-list.benefits-feat-list
+        each item in featList
+          li.benefits-feat-list__item(class=`benefits-feat-list__item--${item.mod}`)
+            p.benefits-feat-list__item-title= item.title
+            p.benefits-feat-list__item-text= item.text

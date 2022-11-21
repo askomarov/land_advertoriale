@@ -1,0 +1,23 @@
+.publish-section {
+  h2 + p {
+    margin: rem(26px) 0 rem(46px);
+  }
+
+  .container {
+
+    padding-bottom: 105px;
+  }
+}
+
+.publish-section__button-publica {
+  width: 100%;
+  max-width: 423px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  font-size: 1rem;
+
+  @media (min-width: $width-mobile-h) {
+    white-space: nowrap;
+    font-size: rem(20px);
+  }
+}

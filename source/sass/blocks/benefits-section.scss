@@ -1,0 +1,103 @@
+.benefits-section {
+  color: var(--color-white);
+  padding: 40px;
+  padding-bottom: 60px;
+  background-color: rgba(51, 51, 51, 0.85);
+
+  @media (min-width: $width-tablet) {
+    background-color: var(--grey-200);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url("../img/benefits/benefits-bg.png");
+    background-size: 1920px 100%;
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding-top: 90px;
+    padding-bottom: 190px;
+  }
+}
+
+.benefits-section__title {
+  margin-bottom: rem(30px);
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: rem(60px);
+  }
+}
+
+.benefits-feat-list {
+  text-align: left;
+  // display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 265px;
+  gap: rem(24px);
+
+  @media (min-width:$width-mobile-h){
+    grid-template-columns: repeat(2, 265px);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: rem(35px);
+  }
+}
+
+.benefits-feat-list__item {
+  flex: 0 0 265px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.benefits-feat-list__item--seo {
+  &::before {
+    background-image: url("../img/benefits/feat-1.png");
+  }
+}
+
+.benefits-feat-list__item--brand {
+  &::before {
+    background-image: url("../img/benefits/feat-2.png");
+  }
+}
+
+.benefits-feat-list__item--leads {
+  &::before {
+    background-image: url("../img/benefits/feat-3.png");
+  }
+}
+
+
+.benefits-feat-list__item--authority {
+  &::before {
+    background-image: url("../img/benefits/feat-4.png");
+  }
+}
+
+.benefits-feat-list__item-title {
+  text-transform: uppercase;
+  font-size: rem(24px);
+  line-height: rem(29px);
+}
+
+.benefits-feat-list__item-text {
+  font-weight: 500;
+  font-size: rem(16px);
+  line-height: rem(18px);
+}
