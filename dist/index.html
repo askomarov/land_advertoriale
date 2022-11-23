@@ -74,6 +74,11 @@
       <path d="M223.368 19.4C223.368 17.9 223.048 16.65 222.408 15.65C221.768 14.65 220.958 13.9 219.978 13.4C218.998 12.9 217.978 12.65 216.918 12.65C216.178 12.65 215.468 12.7 214.788 12.8C214.128 12.88 213.508 13.06 212.928 13.34L213.978 10.7H222.708V5.00005H209.208L206.178 17.69C206.898 17.41 207.648 17.2 208.428 17.0601C209.208 16.9201 209.948 16.83 210.648 16.79C211.368 16.73 211.958 16.7 212.418 16.7C212.978 16.7 213.538 16.7501 214.098 16.85C214.658 16.93 215.128 17.1 215.508 17.36C215.888 17.6 216.078 17.98 216.078 18.5C216.078 19 215.928 19.4 215.628 19.7C215.328 19.98 214.908 20.18 214.368 20.3C213.828 20.4 213.178 20.45 212.418 20.45C212.058 20.45 211.598 20.41 211.038 20.33C210.478 20.23 209.858 20.07 209.178 19.85C208.518 19.63 207.828 19.32 207.108 18.92L205.248 24.74C206.008 25.04 206.828 25.32 207.708 25.58C208.608 25.84 209.598 26.0501 210.678 26.2101C211.758 26.3701 212.938 26.4501 214.218 26.4501C215.238 26.4501 216.278 26.32 217.338 26.06C218.418 25.8 219.408 25.39 220.308 24.83C221.228 24.27 221.968 23.54 222.528 22.64C223.088 21.74 223.368 20.66 223.368 19.4Z" fill="#EE5B12" />
     </g>
   </symbol>
+  <symbol id="icon-tg" viewBox="0 0 24 24">
+    <g fill="none">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M19.777 4.42997C20.0241 4.32596 20.2946 4.29008 20.5603 4.32608C20.826 4.36208 21.0772 4.46863 21.2877 4.63465C21.4982 4.80067 21.6604 5.02008 21.7574 5.27005C21.8543 5.52002 21.8825 5.79141 21.839 6.05597L19.571 19.813C19.351 21.14 17.895 21.901 16.678 21.24C15.66 20.687 14.148 19.835 12.788 18.946C12.108 18.501 10.025 17.076 10.281 16.062C10.501 15.195 14.001 11.937 16.001 9.99997C16.786 9.23897 16.428 8.79997 15.501 9.49997C13.198 11.238 9.50302 13.881 8.28102 14.625C7.20302 15.281 6.64102 15.393 5.96902 15.281C4.74302 15.077 3.60602 14.761 2.67802 14.376C1.42402 13.856 1.48502 12.132 2.67702 11.63L19.777 4.42997V4.42997Z" fill="#373737" />
+    </g>
+  </symbol>
   <symbol id="link" viewBox="0 0 19 19">
     <g fill="none">
       <g clip-path="url(#clip0_502_524)">
@@ -102,7 +107,7 @@
     </div>
     <div class="wrapper">
       <header class="header">
-        <div class="header__container"><a class="logo"><span class="logo__word">Advertoriale</span><span class="logo__nums">365</span></a>
+        <div class="header__container"><a class="logo" href="#"><span class="logo__word">Advertoriale</span><span class="logo__nums">365</span></a>
           <nav class="header__menu header-menu header-menu--no-js">
             <button class="header-menu__button menu-button" type="button" aria-label="Переключатель отображения меню" aria-expanded="false"><span class="menu-button__icon"></span></button>
             <ul class="header-menu__list">
@@ -113,11 +118,13 @@
               <li class="header-menu__item"><a class="header-menu__link" href="#contact">Contact</a></li>
             </ul>
           </nav>
-          <div class="header__actions header-actions">
-            <button class="header-actions__button-publica app-button app-button--primary" type="button">Publica</button>
+          <div class="header__actions header-actions"><a class="header-actions__button-publica app-button app-button--primary" href="#contact">Publica</a>
             <div class="header-actions__lang-select lang-select" id="lang-select">
               <div class="lang-select__selected-value" easy-toggle="#lang-select" easy-class="active">
-                <div class="lang-select__selected-img-wrap"><img src="img//flag-uk.png" width="37" height="37" alt="uk">
+                <div class="lang-select__selected-img-wrap">
+                  <picture>
+                    <source type="image/webp" srcset="img//flag-uk.webp"><img src="img//flag-uk.png" width="37" height="37" alt="uk" loading="lazy">
+                  </picture>
                 </div>
                 <div class="lang-select__selected-text">en</div>
               </div>
@@ -134,9 +141,7 @@
           <div class="container">
             <h1>Creste-ti Afacerea in Romania</h1>
             <p>Publica advertoriale pe site-urile de top din RomaniaPublica advertoriale pe site-urile de top din Romania</p>
-            <div class="promo__btns">
-              <button class="app-button app-button--primary" type="button">Publica</button>
-              <button class="app-button app-button--secondary" type="button">Contact us</button>
+            <div class="promo__btns"><a class="app-button app-button--primary" href="#contact">Publica</a><a class="app-button app-button--secondary" href="#contact">Contact us</a>
             </div>
             <ul class="promo__feat-list">
               <li class="promo__feat-list-item promo__feat-list-item--prices">
@@ -167,141 +172,140 @@
               <div class="publish-tabs__tabs-content" data-tabs="content">
                 <!-- tab 1-->
                 <div class="publish-tabs__cards-list" data-tabs="element">
-                  <div class="publish-card"><a class="publish-card__link" href="Hotnews.ro"></a>
+                  <div class="publish-card"><a class="publish-card__link" href="Hotnews.ro" aria-label="Hotnews.ro"></a>
                     <div class="publish-card__img-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/publish/hot-news.webp"><img src="img/publish/hot-news.png" width="266" height="138" alt="Hotnews.ro" loading="lazy">
                       </picture>
                     </div>
-                    <h3 class="publish-card__title">Hotnews.ro</h3><a class="app-button app-button--primary" href="https://Hotnews.ro" target="_blank" rel="noopener noreferrer">Publish</a>
+                    <h3 class="publish-card__title">Hotnews.ro</h3><a class="app-button app-button--primary" href="#contact">Publish</a>
                   </div>
-                  <div class="publish-card"><a class="publish-card__link" href="Hotnews.ro"></a>
+                  <div class="publish-card"><a class="publish-card__link" href="Hotnews.ro" aria-label="Hotnews.ro"></a>
                     <div class="publish-card__img-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/publish/antena.webp"><img src="img/publish/antena.png" width="266" height="138" alt="Hotnews.ro" loading="lazy">
                       </picture>
                     </div>
-                    <h3 class="publish-card__title">Hotnews.ro</h3><a class="app-button app-button--primary" href="https://Hotnews.ro" target="_blank" rel="noopener noreferrer">Publish</a>
+                    <h3 class="publish-card__title">Hotnews.ro</h3><a class="app-button app-button--primary" href="#contact">Publish</a>
                   </div>
-                  <div class="publish-card"><a class="publish-card__link" href="ww.capital.ro"></a>
+                  <div class="publish-card"><a class="publish-card__link" href="ww.capital.ro" aria-label="ww.capital.ro"></a>
                     <div class="publish-card__img-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/publish/capital.webp"><img src="img/publish/capital.png" width="266" height="138" alt="ww.capital.ro" loading="lazy">
                       </picture>
                     </div>
-                    <h3 class="publish-card__title">ww.capital.ro</h3><a class="app-button app-button--primary" href="https://ww.capital.ro" target="_blank" rel="noopener noreferrer">Publish</a>
+                    <h3 class="publish-card__title">ww.capital.ro</h3><a class="app-button app-button--primary" href="#contact">Publish</a>
                   </div>
-                  <div class="publish-card"><a class="publish-card__link" href="www.dcnews.ro"></a>
+                  <div class="publish-card"><a class="publish-card__link" href="www.dcnews.ro" aria-label="www.dcnews.ro"></a>
                     <div class="publish-card__img-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/publish/dc-news.webp"><img src="img/publish/dc-news.png" width="266" height="138" alt="www.dcnews.ro" loading="lazy">
                       </picture>
                     </div>
-                    <h3 class="publish-card__title">www.dcnews.ro</h3><a class="app-button app-button--primary" href="https://www.dcnews.ro" target="_blank" rel="noopener noreferrer">Publish</a>
+                    <h3 class="publish-card__title">www.dcnews.ro</h3><a class="app-button app-button--primary" href="#contact">Publish</a>
                   </div>
-                  <div class="publish-card"><a class="publish-card__link" href="Hotnews.ro"></a>
+                  <div class="publish-card"><a class="publish-card__link" href="Hotnews.ro" aria-label="Hotnews.ro"></a>
                     <div class="publish-card__img-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/publish/evzro.webp"><img src="img/publish/evzro.png" width="266" height="138" alt="Hotnews.ro" loading="lazy">
                       </picture>
                     </div>
-                    <h3 class="publish-card__title">Hotnews.ro</h3><a class="app-button app-button--primary" href="https://Hotnews.ro" target="_blank" rel="noopener noreferrer">Publish</a>
+                    <h3 class="publish-card__title">Hotnews.ro</h3><a class="app-button app-button--primary" href="#contact">Publish</a>
                   </div>
-                  <div class="publish-card"><a class="publish-card__link" href="Hotnews.ro"></a>
+                  <div class="publish-card"><a class="publish-card__link" href="Hotnews.ro" aria-label="Hotnews.ro"></a>
                     <div class="publish-card__img-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/publish/liber.webp"><img src="img/publish/liber.png" width="266" height="138" alt="Hotnews.ro" loading="lazy">
                       </picture>
                     </div>
-                    <h3 class="publish-card__title">Hotnews.ro</h3><a class="app-button app-button--primary" href="https://Hotnews.ro" target="_blank" rel="noopener noreferrer">Publish</a>
+                    <h3 class="publish-card__title">Hotnews.ro</h3><a class="app-button app-button--primary" href="#contact">Publish</a>
                   </div>
-                  <div class="publish-card"><a class="publish-card__link" href="Hotnews.ro"></a>
+                  <div class="publish-card"><a class="publish-card__link" href="Hotnews.ro" aria-label="Hotnews.ro"></a>
                     <div class="publish-card__img-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/publish/media2.webp"><img src="img/publish/media2.png" width="266" height="138" alt="Hotnews.ro" loading="lazy">
                       </picture>
                     </div>
-                    <h3 class="publish-card__title">Hotnews.ro</h3><a class="app-button app-button--primary" href="https://Hotnews.ro" target="_blank" rel="noopener noreferrer">Publish</a>
+                    <h3 class="publish-card__title">Hotnews.ro</h3><a class="app-button app-button--primary" href="#contact">Publish</a>
                   </div>
-                  <div class="publish-card"><a class="publish-card__link" href="Hotnews.ro"></a>
+                  <div class="publish-card"><a class="publish-card__link" href="Hotnews.ro" aria-label="Hotnews.ro"></a>
                     <div class="publish-card__img-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/publish/mediafax.webp"><img src="img/publish/mediafax.png" width="266" height="138" alt="Hotnews.ro" loading="lazy">
                       </picture>
                     </div>
-                    <h3 class="publish-card__title">Hotnews.ro</h3><a class="app-button app-button--primary" href="https://Hotnews.ro" target="_blank" rel="noopener noreferrer">Publish</a>
+                    <h3 class="publish-card__title">Hotnews.ro</h3><a class="app-button app-button--primary" href="#contact">Publish</a>
                   </div>
                 </div>
                 <!-- tabs 2-->
                 <div class="publish-tabs__cards-list" data-tabs="element">
-                  <div class="publish-card"><a class="publish-card__link" href="Hotnews"></a>
+                  <div class="publish-card"><a class="publish-card__link" href="Hotnews" aria-label="Hotnews"></a>
                     <div class="publish-card__img-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/publish/profit.webp"><img src="img/publish/profit.png" width="266" height="138" alt="Hotnews" loading="lazy">
                       </picture>
                     </div>
-                    <h3 class="publish-card__title">Hotnews</h3><a class="app-button app-button--primary" href="https://Hotnews" target="_blank" rel="noopener noreferrer">Publish</a>
+                    <h3 class="publish-card__title">Hotnews</h3><a class="app-button app-button--primary" href="#contact">Publish</a>
                   </div>
-                  <div class="publish-card"><a class="publish-card__link" href="www.prosport.ro"></a>
+                  <div class="publish-card"><a class="publish-card__link" href="www.prosport.ro" aria-label="www.prosport.ro"></a>
                     <div class="publish-card__img-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/publish/prosport.webp"><img src="img/publish/prosport.png" width="266" height="138" alt="www.prosport.ro" loading="lazy">
                       </picture>
                     </div>
-                    <h3 class="publish-card__title">www.prosport.ro</h3><a class="app-button app-button--primary" href="https://www.prosport.ro" target="_blank" rel="noopener noreferrer">Publish</a>
+                    <h3 class="publish-card__title">www.prosport.ro</h3><a class="app-button app-button--primary" href="#contact">Publish</a>
                   </div>
-                  <div class="publish-card"><a class="publish-card__link" href="www.sport.ro"></a>
+                  <div class="publish-card"><a class="publish-card__link" href="www.sport.ro" aria-label="www.sport.ro"></a>
                     <div class="publish-card__img-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/publish/sport-ro.webp"><img src="img/publish/sport-ro.png" width="266" height="138" alt="www.sport.ro" loading="lazy">
                       </picture>
                     </div>
-                    <h3 class="publish-card__title">www.sport.ro</h3><a class="app-button app-button--primary" href="https://www.sport.ro" target="_blank" rel="noopener noreferrer">Publish</a>
+                    <h3 class="publish-card__title">www.sport.ro</h3><a class="app-button app-button--primary" href="#contact">Publish</a>
                   </div>
-                  <div class="publish-card"><a class="publish-card__link" href="Hotnews"></a>
+                  <div class="publish-card"><a class="publish-card__link" href="Hotnews" aria-label="Hotnews"></a>
                     <div class="publish-card__img-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/publish/ziarul.webp"><img src="img/publish/ziarul.png" width="266" height="138" alt="Hotnews" loading="lazy">
                       </picture>
                     </div>
-                    <h3 class="publish-card__title">Hotnews</h3><a class="app-button app-button--primary" href="https://Hotnews" target="_blank" rel="noopener noreferrer">Publish</a>
+                    <h3 class="publish-card__title">Hotnews</h3><a class="app-button app-button--primary" href="#contact">Publish</a>
                   </div>
-                  <div class="publish-card"><a class="publish-card__link" href="www.dcnews.ro"></a>
+                  <div class="publish-card"><a class="publish-card__link" href="www.dcnews.ro" aria-label="www.dcnews.ro"></a>
                     <div class="publish-card__img-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/publish/dc-news.webp"><img src="img/publish/dc-news.png" width="266" height="138" alt="www.dcnews.ro" loading="lazy">
                       </picture>
                     </div>
-                    <h3 class="publish-card__title">www.dcnews.ro</h3><a class="app-button app-button--primary" href="https://www.dcnews.ro" target="_blank" rel="noopener noreferrer">Publish</a>
+                    <h3 class="publish-card__title">www.dcnews.ro</h3><a class="app-button app-button--primary" href="#contact">Publish</a>
                   </div>
-                  <div class="publish-card"><a class="publish-card__link" href="Hotnews.ro"></a>
+                  <div class="publish-card"><a class="publish-card__link" href="Hotnews.ro" aria-label="Hotnews.ro"></a>
                     <div class="publish-card__img-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/publish/media2.webp"><img src="img/publish/media2.png" width="266" height="138" alt="Hotnews.ro" loading="lazy">
                       </picture>
                     </div>
-                    <h3 class="publish-card__title">Hotnews.ro</h3><a class="app-button app-button--primary" href="https://Hotnews.ro" target="_blank" rel="noopener noreferrer">Publish</a>
+                    <h3 class="publish-card__title">Hotnews.ro</h3><a class="app-button app-button--primary" href="#contact">Publish</a>
                   </div>
-                  <div class="publish-card"><a class="publish-card__link" href="Hotnews.ro"></a>
+                  <div class="publish-card"><a class="publish-card__link" href="Hotnews.ro" aria-label="Hotnews.ro"></a>
                     <div class="publish-card__img-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/publish/antena.webp"><img src="img/publish/antena.png" width="266" height="138" alt="Hotnews.ro" loading="lazy">
                       </picture>
                     </div>
-                    <h3 class="publish-card__title">Hotnews.ro</h3><a class="app-button app-button--primary" href="https://Hotnews.ro" target="_blank" rel="noopener noreferrer">Publish</a>
+                    <h3 class="publish-card__title">Hotnews.ro</h3><a class="app-button app-button--primary" href="#contact">Publish</a>
                   </div>
-                  <div class="publish-card"><a class="publish-card__link" href="Hotnews.ro"></a>
+                  <div class="publish-card"><a class="publish-card__link" href="Hotnews.ro" aria-label="Hotnews.ro"></a>
                     <div class="publish-card__img-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/publish/evzro.webp"><img src="img/publish/evzro.png" width="266" height="138" alt="Hotnews.ro" loading="lazy">
                       </picture>
                     </div>
-                    <h3 class="publish-card__title">Hotnews.ro</h3><a class="app-button app-button--primary" href="https://Hotnews.ro" target="_blank" rel="noopener noreferrer">Publish</a>
+                    <h3 class="publish-card__title">Hotnews.ro</h3><a class="app-button app-button--primary" href="#contact">Publish</a>
                   </div>
                 </div>
               </div>
-            </div>
-            <button class="publish-section__button-publica app-button app-button--ghost" type="button">PUBLICA IN 2000 SITEURI</button>
+            </div><a class="publish-section__button-publica app-button app-button--ghost" href="#contact">PUBLICA IN 2000 SITEURI</a>
           </div>
         </section>
         <section class="benefits-section section" id="benefits">
@@ -336,7 +340,10 @@
                 <button class="order-item__btn app-button app-button--primary" type="button">Buy</button>
                 <p>$150</p>
                 <p class="order-item__link">Hotnews.ro</p>
-                <p>Romania</p><img class="order-item__img" src="img/flag/flag-ro.png" width="36" height="36" alt="Romania">
+                <p>Romania</p>
+                <picture>
+                  <source type="image/webp" srcset="img/flag/flag-ro.webp"><img class="order-item__img" src="img/flag/flag-ro.png" width="36" height="36" alt="Romania" loading="lazy">
+                </picture>
                 <p class="order-item__country-code">ro</p>
                 <p class="order-item__stat">90</p>
                 <p class="order-item__stat">77</p>
@@ -347,7 +354,10 @@
                 <button class="order-item__btn app-button app-button--primary" type="button">Buy</button>
                 <p>$150</p>
                 <p class="order-item__link">Hotnews.ro</p>
-                <p>Romania</p><img class="order-item__img" src="img/flag/flag-ro.png" width="36" height="36" alt="Romania">
+                <p>Romania</p>
+                <picture>
+                  <source type="image/webp" srcset="img/flag/flag-ro.webp"><img class="order-item__img" src="img/flag/flag-ro.png" width="36" height="36" alt="Romania" loading="lazy">
+                </picture>
                 <p class="order-item__country-code">ro</p>
                 <p class="order-item__stat">90</p>
                 <p class="order-item__stat">77</p>
@@ -358,50 +368,76 @@
                 <button class="order-item__btn app-button app-button--primary" type="button">Buy</button>
                 <p>$150</p>
                 <p class="order-item__link">Hotnews.ro</p>
-                <p>Romania</p><img class="order-item__img" src="img/flag/flag-ro.png" width="36" height="36" alt="Romania">
+                <p>Romania</p>
+                <picture>
+                  <source type="image/webp" srcset="img/flag/flag-ro.webp"><img class="order-item__img" src="img/flag/flag-ro.png" width="36" height="36" alt="Romania" loading="lazy">
+                </picture>
                 <p class="order-item__country-code">ro</p>
                 <p class="order-item__stat">90</p>
                 <p class="order-item__stat">77</p>
                 <p class="order-item__stat">93</p>
                 <p class="order-item__stat">16</p>
               </div>
-            </div>
-            <button class="publish-section__button-publica app-button app-button--ghost" type="button">PUBLICA IN 2000 SITEURI</button>
+            </div><a class="publish-section__button-publica app-button app-button--ghost" href="#contact">PUBLICA IN 2000 SITEURI</a>
           </div>
         </section>
         <section class="flags-section section">
           <div class="container">
             <h2 class="flags-section__title">Publish in 80 GEOs</h2>
             <div class="country-list">
-              <div class="country-list__item"><img class="country-list__item-img" src="img/flag/uk.png" width="120" height="120" alt="flag">
+              <div class="country-list__item">
+                <picture>
+                  <source type="image/webp" srcset="img/flag/uk.webp"><img class="country-list__item-img" src="img/flag/uk.png" width="120" height="120" alt="flag" loading="lazy">
+                </picture>
                 <p class="country-list__item-lang">English</p>
                 <p class="country-list__item-stat">25000</p>
               </div>
-              <div class="country-list__item"><img class="country-list__item-img" src="img/flag/es.png" width="120" height="120" alt="flag">
+              <div class="country-list__item">
+                <picture>
+                  <source type="image/webp" srcset="img/flag/es.webp"><img class="country-list__item-img" src="img/flag/es.png" width="120" height="120" alt="flag" loading="lazy">
+                </picture>
                 <p class="country-list__item-lang">English</p>
                 <p class="country-list__item-stat">25000</p>
               </div>
-              <div class="country-list__item"><img class="country-list__item-img" src="img/flag/ger.png" width="120" height="120" alt="flag">
+              <div class="country-list__item">
+                <picture>
+                  <source type="image/webp" srcset="img/flag/ger.webp"><img class="country-list__item-img" src="img/flag/ger.png" width="120" height="120" alt="flag" loading="lazy">
+                </picture>
                 <p class="country-list__item-lang">English</p>
                 <p class="country-list__item-stat">25000</p>
               </div>
-              <div class="country-list__item"><img class="country-list__item-img" src="img/flag/mol.png" width="120" height="120" alt="flag">
+              <div class="country-list__item">
+                <picture>
+                  <source type="image/webp" srcset="img/flag/mol.webp"><img class="country-list__item-img" src="img/flag/mol.png" width="120" height="120" alt="flag" loading="lazy">
+                </picture>
                 <p class="country-list__item-lang">English</p>
                 <p class="country-list__item-stat">25000</p>
               </div>
-              <div class="country-list__item"><img class="country-list__item-img" src="img/flag/por.png" width="120" height="120" alt="flag">
+              <div class="country-list__item">
+                <picture>
+                  <source type="image/webp" srcset="img/flag/por.webp"><img class="country-list__item-img" src="img/flag/por.png" width="120" height="120" alt="flag" loading="lazy">
+                </picture>
                 <p class="country-list__item-lang">English</p>
                 <p class="country-list__item-stat">25000</p>
               </div>
-              <div class="country-list__item"><img class="country-list__item-img" src="img/flag/fin.png" width="120" height="120" alt="flag">
+              <div class="country-list__item">
+                <picture>
+                  <source type="image/webp" srcset="img/flag/fin.webp"><img class="country-list__item-img" src="img/flag/fin.png" width="120" height="120" alt="flag" loading="lazy">
+                </picture>
                 <p class="country-list__item-lang">English</p>
                 <p class="country-list__item-stat">25000</p>
               </div>
-              <div class="country-list__item"><img class="country-list__item-img" src="img/flag/swed.png" width="120" height="120" alt="flag">
+              <div class="country-list__item">
+                <picture>
+                  <source type="image/webp" srcset="img/flag/swed.webp"><img class="country-list__item-img" src="img/flag/swed.png" width="120" height="120" alt="flag" loading="lazy">
+                </picture>
                 <p class="country-list__item-lang">English</p>
                 <p class="country-list__item-stat">25000</p>
               </div>
-              <div class="country-list__item"><img class="country-list__item-img" src="img/flag/fr.png" width="120" height="120" alt="flag">
+              <div class="country-list__item">
+                <picture>
+                  <source type="image/webp" srcset="img/flag/fr.webp"><img class="country-list__item-img" src="img/flag/fr.png" width="120" height="120" alt="flag" loading="lazy">
+                </picture>
                 <p class="country-list__item-lang">English</p>
                 <p class="country-list__item-stat">25000</p>
               </div>
@@ -410,7 +446,11 @@
         </section>
         <section class="contact-section section" id="contact">
           <div class="container contact-section__container">
-            <div class="contact-section__col">
+            <div class="contact-section__mobile-title-wrap">
+              <h2 class="contact-section__title">Contact With Us</h2>
+              <p class="contact-section__text">Sit voluptatem accusantium doloremque laudantium</p>
+            </div>
+            <div class="contact-section__col mobile-hidden">
               <h2 class="contact-section__title">Contact With Us</h2>
               <p class="contact-section__text">Sit voluptatem accusantium doloremque laudantium</p>
               <ul class="contact-feat-list contact-section__feat-list">
@@ -464,8 +504,7 @@
                 <div class="form-group">
                   <label for="comment"></label>
                   <textarea class="form__input form__input--textarea" id="comment" placeholder="Project Detail" name="comment"></textarea>
-                </div>
-                <button class="form__button-submit app-button app-button--primary" type="submit">Book a call</button>
+                </div><a class="form__button-submit app-button app-button--primary" href="#">Book a call</a>
               </form>
             </div>
           </div>
@@ -574,7 +613,7 @@
         <div class="footer__bottom">
           <div class="footer__bottom-container container">
             <p class="footer__copy">© 2022 adertoriale Pty Ltd. Trademarks and brands are the property of their respective owners.</p>
-            <div class="footer__socials-list"><a class="footer__socials-link" href="#" target="_blank" aria-label="link to facebook"><img src="img/icons/fb.svg" width="10" height="20" alt="icon fb"></a><a class="footer__socials-link" href="#" target="_blank" aria-label="link to linked"><img src="img/icons/youtube.svg" width="27" height="18" alt="icon fb"></a><a class="footer__socials-link" href="#" target="_blank" aria-label="link to instagram"><img src="img/icons/link.svg" width="19" height="19" alt="icon fb"></a><a class="footer__socials-link" href="#" target="_blank" aria-label="link to pinterest"><img src="img/icons/tw.svg" width="22" height="17" alt="icon fb"></a></div>
+            <div class="footer__socials-list"><a class="footer__socials-link" href="#" target="_blank" aria-label="link to linkedin"><img src="img/icons/link.svg" width="19" height="19" alt="icon linkedin"></a><a class="footer__socials-link" href="#" target="_blank" aria-label="link to twitter"><img src="img/icons/tw.svg" width="22" height="17" alt="icon twitter"></a><a class="footer__socials-link" href="#" target="_blank" aria-label="link to facebook"><img src="img/icons/fb.svg" width="10" height="20" alt="icon facebook"></a><a class="footer__socials-link" href="#" target="_blank" aria-label="link to telegram"><img src="img/icons/icon-tg.svg" width="24" height="24" alt="icon telegramm"></a></div>
           </div>
         </div>
       </footer>

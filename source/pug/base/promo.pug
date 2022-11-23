@@ -24,8 +24,8 @@ mixin promo()
       h1 Creste-ti Afacerea in Romania
       p Publica advertoriale pe site-urile de top din RomaniaPublica advertoriale pe site-urile de top din Romania
       .promo__btns
-        +appButton('primary', 'btn', '#', 'Publica')
-        +appButton('secondary', 'btn', '#', 'Contact us')
+        +appButton('primary', 'link', '#contact', 'Publica')
+        +appButton('secondary', 'link', '#contact', 'Contact us')
       ul.promo__feat-list
         each item in featList
           li.promo__feat-list-item(class=`promo__feat-list-item--${item.modif}`)

@@ -25,7 +25,10 @@ mixin contactSection()
 
   section.contact-section.section(id="contact")
     .container.contact-section__container
-      .contact-section__col
+      div.contact-section__mobile-title-wrap
+        h2.contact-section__title Contact With Us
+        p.contact-section__text Sit voluptatem accusantium doloremque laudantium
+      .contact-section__col.mobile-hidden
         h2.contact-section__title Contact With Us
         p.contact-section__text Sit voluptatem accusantium doloremque laudantium
         +contact-feat-list().contact-section__feat-list

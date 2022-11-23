@@ -48,6 +48,6 @@ mixin flagsSection()
       .country-list
         each item in flagsList
           .country-list__item
-            +img('flag', `${item.flag}`, 'png', 120, 120, `flag`).country-list__item-img
+            +imgWebp('flag',`${item.flag}`, 'png', 120, 120, 'flag').country-list__item-img
             p.country-list__item-lang= item.lang
             p.country-list__item-stat= item.stat

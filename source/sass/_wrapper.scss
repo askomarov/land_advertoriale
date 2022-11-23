@@ -36,7 +36,10 @@
       height: auto;
       top: 0;
       background-repeat: no-repeat;
-      background-image: url("../img/bg.png");
+      background-image: image-set(
+        url("../img/bg.webp") 1x,
+        url("../img/bg.png") 1x
+      );
       background-position: top center;
       background-size: 100% 100%;
 

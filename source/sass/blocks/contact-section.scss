@@ -10,7 +10,7 @@
     padding-bottom: 80px;
   }
 
-  @media (min-width: $width-tablet-h) {
+  @media (min-width: 1280px) {
     text-align: left;
   }
 }
@@ -19,14 +19,19 @@
   display: grid;
   gap: rem(20px);
 
-  @media (min-width: $width-tablet) {
-  }
-
-  @media (min-width: $width-tablet-h) {
+  @media (min-width: 1280px) {
     grid-template-columns: 1fr minmax(auto, 586px);
     justify-content: space-between;
     gap: rem(40px);
     align-items: end;
+  }
+}
+
+.contact-section__mobile-title-wrap {
+  display: none;
+
+  @media (max-width: 1280px) {
+    display: block;
   }
 }
 
@@ -45,5 +50,13 @@
 
   @media (min-width: $width-mobile-h) {
     justify-self: start;
+  }
+}
+
+.contact-section__col {
+  &.mobile-hidden {
+    @media (max-width: 1280px) {
+      display: none;
+    }
   }
 }

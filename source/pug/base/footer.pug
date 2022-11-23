@@ -74,11 +74,11 @@ mixin footer()
       .footer__bottom-container.container
         p.footer__copy © 2022 adertoriale Pty Ltd. Trademarks and brands are the property of their respective owners.
         .footer__socials-list
+          a.footer__socials-link(href='#' target='_blank' aria-label='link to linkedin')
+            +img('icons', 'link', 'svg', 19, 19, 'icon linkedin')
+          a.footer__socials-link(href='#' target='_blank' aria-label='link to twitter')
+            +img('icons', 'tw', 'svg', 22, 17, 'icon twitter')
           a.footer__socials-link(href='#' target='_blank' aria-label='link to facebook')
-            +img('icons', 'fb', 'svg', 10, 20, 'icon fb')
-          a.footer__socials-link(href='#' target='_blank' aria-label='link to linked')
-            +img('icons', 'youtube', 'svg', 27, 18, 'icon fb')
-          a.footer__socials-link(href='#' target='_blank' aria-label='link to instagram')
-            +img('icons', 'link', 'svg', 19, 19, 'icon fb')
-          a.footer__socials-link(href='#' target='_blank' aria-label='link to pinterest')
-            +img('icons', 'tw', 'svg', 22, 17, 'icon fb')
+            +img('icons', 'fb', 'svg', 10, 20, 'icon facebook')
+          a.footer__socials-link(href='#' target='_blank' aria-label='link to telegram')
+            +img('icons', 'icon-tg', 'svg', 24, 24, 'icon telegramm')

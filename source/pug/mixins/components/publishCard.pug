@@ -1,7 +1,7 @@
 mixin publishCard(img, text, href)
   .publish-card
-    a(href=href).publish-card__link
+    a(href=href aria-label=text).publish-card__link
     .publish-card__img-wrap
       +imgWebp('publish',`${img}`, 'png', 266, 138, `${text}`)
     h3.publish-card__title= text
-    +appButton('primary', 'link', `https://${href}`, 'Publish', true)
+    +appButton('primary', 'link', `#contact`, 'Publish')

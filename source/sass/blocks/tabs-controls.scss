@@ -2,10 +2,16 @@
   border: 2px solid var(--primary-color-500);
   border-radius: 4px;
   display: inline-grid;
-  grid-template-columns: auto auto;
+  width: 270px;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
   position: relative;
+
+  @media (min-width: $width-mobile-h) {
+    width: auto;
+    grid-template-columns: auto auto;
+  }
 }
 
 .tabs-controls__button {

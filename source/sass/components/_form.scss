@@ -38,17 +38,6 @@
     font-weight: inherit;
     color: #a4a4a4;
   }
-
-  &:hover,
-  &:active {
-    box-shadow: 0 0 0 1px #cbcbcb;
-  }
-
-  &:focus,
-  &:focus-within,
-  &:focus-visible {
-    box-shadow: 0 0 0 1px #a6a6a6;
-  }
 }
 
 .form__input--textarea {

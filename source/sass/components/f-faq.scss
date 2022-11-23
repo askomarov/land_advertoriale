@@ -33,14 +33,19 @@
 }
 
 .f-faq__item summary span {
-  padding: 10px 24px 13px 34px;
+  padding: 0.8rem;
   display: flex;
   align-items: center;
   width: 100%;
   position: relative;
 
+  @media (min-width: $width-mobile-h) {
+    padding: 10px 24px 13px 34px;
+  }
+
   &::after {
     content: "+";
+    margin-left: rem(8px);
     width: 32px;
     height: 32px;
     flex: 0 0 32px;
@@ -49,8 +54,11 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    margin-left: auto;
     margin-right: 0;
+
+    @media (min-width: $width-mobile-h) {
+      margin-left: auto;
+    }
   }
 
   &::before {

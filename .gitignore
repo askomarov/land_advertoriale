@@ -6,3 +6,4 @@ package-lock.json
 *.psd
 node_modules/
 Thumbs.db
+dist

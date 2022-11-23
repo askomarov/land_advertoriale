@@ -14,7 +14,7 @@
 
 .order-table {
   background: #ffffff;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 4px;
   margin-bottom: rem(50px);
   width: 100%;
@@ -44,11 +44,17 @@
 }
 
 .order-item__link {
-  margin-right: 77px;
+  flex: 1 1 auto;
+  text-align: left;
+  margin-right: 17px;
   margin-left: 24px;
+  max-width: 193px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .order-item__img {
+  max-width: initial;
   margin-right: 12px;
   margin-left: 65px;
 }

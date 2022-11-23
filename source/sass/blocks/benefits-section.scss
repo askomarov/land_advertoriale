@@ -8,7 +8,10 @@
     background-color: var(--grey-200);
     background-repeat: no-repeat;
     background-position: top center;
-    background-image: url("../img/benefits/benefits-bg.png");
+    background-image: image-set(
+      url("../img/benefits/benefits-bg.webp") 1x,
+      url("../img/benefits/benefits-bg.png") 1x
+    );
     background-size: 1920px 100%;
     padding-top: 60px;
     padding-bottom: 120px;
@@ -67,26 +70,38 @@
 
 .benefits-feat-list__item--seo {
   &::before {
-    background-image: url("../img/benefits/feat-1.png");
+    background-image: image-set(
+      url("../img/benefits/feat-1.webp") 1x,
+      url("../img/benefits/feat-1.png") 1x
+    );
   }
 }
 
 .benefits-feat-list__item--brand {
   &::before {
-    background-image: url("../img/benefits/feat-2.png");
+    background-image: image-set(
+      url("../img/benefits/feat-2.webp") 1x,
+      url("../img/benefits/feat-2.png") 1x
+    );
   }
 }
 
 .benefits-feat-list__item--leads {
   &::before {
-    background-image: url("../img/benefits/feat-3.png");
+    background-image: image-set(
+      url("../img/benefits/feat-3.webp") 1x,
+      url("../img/benefits/feat-3.png") 1x
+    );
   }
 }
 
 
 .benefits-feat-list__item--authority {
   &::before {
-    background-image: url("../img/benefits/feat-4.png");
+    background-image: image-set(
+      url("../img/benefits/feat-4.webp") 1x,
+      url("../img/benefits/feat-4.png") 1x
+    );
   }
 }
 
