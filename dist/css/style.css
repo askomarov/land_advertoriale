@@ -554,7 +554,7 @@ button {
 .publish-card {
   position: relative;
   background: #ffffff;
-  border: 1px solid var(--primary-color-500);
+  border: 2px solid #e2e2e2;
   border-radius: 4px;
   padding: 1.25rem 1.1875rem 2.375rem;
   text-align: center;
@@ -576,7 +576,6 @@ button {
   width: 226px;
   aspect-ratio: 226/138;
   height: auto;
-  width: 100%;
   max-width: 226px;
   margin-inline: auto;
   position: relative;

@@ -188,7 +188,8 @@ const js = () => {
 const mainTasks = gulp.series(
   sprite,
   gulp.parallel(copy, pugToHtml, js, images),
-  css
+  css,
+  cleanCss
 );
 const dev = gulp.series(clean, mainTasks, serverInit);
 const build = gulp.series(clean, mainTasks);
@@ -201,5 +202,6 @@ export { fonts };
 export { deploy };
 export { createWebp };
 export { cleanCss };
+export { build };
 // Выполнение сценария по умолчанию
 gulp.task("default", dev);
