@@ -17,6 +17,7 @@ mixin publishSection()
       .publish-tabs(data-tabs="parent")
         .publish-tabs__tabs-controls.tabs-controls(data-tabs="controls")
           each tab in tabs
+            // class=".tabs-controls__button .is-active "
             button.tabs-controls__button(type="button" class!=tab.active ? 'is-active' : '', data-tabs="control")
               span= tab.text
           .tabs-controls__active-tab

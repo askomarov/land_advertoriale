@@ -1,7 +1,6 @@
 .flags-section {
   color: var(--color-white);
-  padding-top: 65px;
-  padding-bottom: 55px;
+  padding-block: rem(20px);
   background-color: var(--grey-200);
   background-image: radial-gradient(
     88.65% 1908.57% at 7.08% 82.42%,
@@ -11,13 +10,16 @@
   );
 
   @media (min-width: $width-tablet) {
-    padding-top: 110px;
-    padding-bottom: 105px;
+    padding-block: rem(24px);
   }
 }
 
 .flags-section__title {
-  margin-bottom: rem(48px);
+  margin-bottom: rem(24px);
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: rem(48px);
+  }
 }
 
 .country-list {

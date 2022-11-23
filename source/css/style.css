@@ -256,6 +256,98 @@ button {
     background: linear-gradient(180deg, #ff8447 0, #ff5500 100%);
   }
 }
+.site-breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.site-breadcrumbs__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.site-breadcrumbs__wrap a:first-child {
+  position: relative;
+  padding-left: 32px;
+}
+
+@media (min-width: 767px) {
+  .site-breadcrumbs__wrap a:first-child {
+    padding-left: 0;
+  }
+}
+.site-breadcrumbs__wrap a:first-child::before {
+  content: "";
+  left: 0;
+  position: absolute;
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='25' viewBox='0 0 25 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.4163 20.8333V14.5833H14.583V20.8333H19.7913V12.5H22.9163L12.4997 3.125L2.08301 12.5H5.20801V20.8333H10.4163Z' fill='%23666666'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 767px) {
+  .site-breadcrumbs__wrap a:first-child::before {
+    position: relative;
+    width: 27px;
+    height: 27px;
+    margin-right: 27px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 27px;
+            flex: 0 0 27px;
+  }
+}
+.site-breadcrumbs__wrap a {
+  font-size: 0.75rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 767px) {
+  .site-breadcrumbs__wrap a {
+    font-size: 0.875rem;
+  }
+}
+.site-breadcrumbs__wrap a:hover {
+  text-decoration: underline;
+}
+
+.site-breadcrumbs__wrap a:not(:first-child)::before {
+  margin: 0px;
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.36914 10.3625L8.23164 7.5L5.36914 4.63125L6.25039 3.75L10.0004 7.5L6.25039 11.25L5.36914 10.3625Z' fill='black'/%3E%3C/svg%3E%0A");
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+
+@media (min-width: 767px) {
+  .site-breadcrumbs__wrap a:not(:first-child)::before {
+    margin: 0 22px;
+  }
+}
 .f-faq {
   background: #f2f2f2;
   -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);

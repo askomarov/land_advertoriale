@@ -24,7 +24,6 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   window.addEventListener("load", () => {
-    console.log("hello!");
     initAccordion();
     initTabs();
     initHeader();

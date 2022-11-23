@@ -8,7 +8,9 @@
     <meta name="description" content="Eliteremoters">
     <meta name="msapplication-TileColor" content="#3b2291">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/style.clean.min.css">
   </head>
   <body>
     <div class="visually-hidden"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -108,7 +110,9 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__container"><a class="logo" href="#"><span class="logo__word">Advertoriale</span><span class="logo__nums">365</span></a>
-          <nav class="header__menu header-menu header-menu--no-js">
+          <!-- class="header-menu--closed"-->
+          <!-- class="header-menu--opened"-->
+          <nav class="header__menu header-menu header-menu--closed">
             <button class="header-menu__button menu-button" type="button" aria-label="Переключатель отображения меню" aria-expanded="false"><span class="menu-button__icon"></span></button>
             <ul class="header-menu__list">
               <li class="header-menu__item"><a class="header-menu__link" href="#publica">Publica</a></li>
@@ -165,7 +169,9 @@
             <p>Sit voluptatem accusantium doloremque laudantium</p>
             <div class="publish-tabs" data-tabs="parent">
               <div class="publish-tabs__tabs-controls tabs-controls" data-tabs="controls">
+                <!-- class=".tabs-controls__button .is-active "-->
                 <button class="tabs-controls__button is-active" type="button" data-tabs="control"><span>General </span></button>
+                <!-- class=".tabs-controls__button .is-active "-->
                 <button class="tabs-controls__button" type="button" data-tabs="control"><span>Premium</span></button>
                 <div class="tabs-controls__active-tab"></div>
               </div>
@@ -336,8 +342,7 @@
             <h2 class="order-section__title">Order Simple Way</h2>
             <p class="order-section__subtitle">Sit voluptatem accusantium doloremque laudantium</p>
             <div class="order-table">
-              <div class="order-table__row order-item">
-                <button class="order-item__btn app-button app-button--primary" type="button">Buy</button>
+              <div class="order-table__row order-item"><a class="order-item__btn app-button app-button--primary" href="#contact">Buy</a>
                 <p>$150</p>
                 <p class="order-item__link">Hotnews.ro</p>
                 <p>Romania</p>
@@ -350,8 +355,7 @@
                 <p class="order-item__stat">93</p>
                 <p class="order-item__stat">16</p>
               </div>
-              <div class="order-table__row order-item">
-                <button class="order-item__btn app-button app-button--primary" type="button">Buy</button>
+              <div class="order-table__row order-item"><a class="order-item__btn app-button app-button--primary" href="#contact">Buy</a>
                 <p>$150</p>
                 <p class="order-item__link">Hotnews.ro</p>
                 <p>Romania</p>
@@ -364,8 +368,7 @@
                 <p class="order-item__stat">93</p>
                 <p class="order-item__stat">16</p>
               </div>
-              <div class="order-table__row order-item">
-                <button class="order-item__btn app-button app-button--primary" type="button">Buy</button>
+              <div class="order-table__row order-item"><a class="order-item__btn app-button app-button--primary" href="#contact">Buy</a>
                 <p>$150</p>
                 <p class="order-item__link">Hotnews.ro</p>
                 <p>Romania</p>
@@ -561,6 +564,7 @@
       <footer class="site-footer footer">
         <div class="container footer__top-container accordion">
           <div class="footer__column">
+            <!-- class="footer__title is-open"-->
             <h3 class="footer__title">Category 01</h3>
             <ul class="footer__footer-nav footer-nav">
               <li class="footer-nav__item"><a class="footer-nav__link" href="#">Option 01</a></li>

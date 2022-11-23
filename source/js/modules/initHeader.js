@@ -19,8 +19,7 @@ const closeMenu = () => {
 
 // //////////////// КОНЕЦ меню бургер
 const initHeader = () => {
-  headerMenu.classList.remove("header-menu--no-js");
-  headerMenu.classList.add("header-menu--closed");
+  // headerMenu.classList.add("header-menu--closed");
 
   menuButton.addEventListener("click", () => {
     if (headerMenu.classList.contains("header-menu--closed")) {
@@ -32,7 +31,6 @@ const initHeader = () => {
 
   headerLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      console.log("click");
       if (headerMenu.classList.contains("header-menu--opened")) {
         closeMenu();
       }

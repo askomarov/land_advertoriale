@@ -34,7 +34,9 @@ mixin header(headerMods, currentPage)
       else
         a.logo(href="index.html", aria-label="Переход на главную")
           +logo()
-      nav.header__menu.header-menu.header-menu--no-js
+      // class="header-menu--closed"
+      // class="header-menu--opened"
+      nav.header__menu.header-menu.header-menu--closed
         button.header-menu__button.menu-button(type="button", aria-label="Переключатель отображения меню", aria-expanded="false")
           span.menu-button__icon
         ul.header-menu__list

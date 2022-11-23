@@ -39,7 +39,7 @@ mixin orderSection()
       .order-table
         each item in orderTable
           .order-table__row.order-item
-            +appButton('primary', 'button', 'href', 'Buy').order-item__btn
+            +appButton('primary', 'link', '#contact', 'Buy').order-item__btn
             p= item.price
             p.order-item__link= item.link
             p= item.country
