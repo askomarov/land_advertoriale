@@ -1,21 +1,21 @@
 @charset "UTF-8";
 /* /////////////////////////////// //  БАЗОВЫЕ СТИЛИ /////////////////////////////// */
 @font-face {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-display: swap;
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-display: swap;
   src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   font-display: swap;
   src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
   font-weight: 600;
@@ -170,9 +170,9 @@ button {
     background-size: 100% 100%;
   }
 }
-@media (min-width: 767px) and (min-width: 1120px) {
+@media (min-width: 767px) and (min-width: 1024px) {
   .wrapper::before {
-    min-height: 960px;
+    min-height: 1000px;
   }
 }
 @media (min-width: 767px) and (min-width: 1340px) {
@@ -410,7 +410,6 @@ button {
   top: 0;
   left: 0;
   right: 0;
-  left: 0;
   background-color: rgba(80, 80, 80, 0.7);
   z-index: -1;
 }
@@ -573,7 +572,6 @@ button {
 .publish-card__img-wrap {
   border-radius: 4px;
   overflow: hidden;
-  width: 226px;
   aspect-ratio: 226/138;
   height: auto;
   max-width: 226px;
@@ -680,7 +678,7 @@ button {
   display: block;
   width: 24px;
   height: 24px;
-  background-image: url("../img/icons/icon-arrow.svg");
+  background-image: url("../img/icon-arrow.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1452,7 +1450,6 @@ button {
 
 .promo p {
   font-weight: 500;
-  font-size: 1.5rem;
   font-size: clamp(1rem, 4vw, 1.5rem);
   line-height: 1.8125rem;
   max-width: 740px;
@@ -1526,12 +1523,17 @@ button {
   line-height: 1.5rem;
 }
 
-@media (min-width: 1120px) {
+@media (min-width: 1024px) {
   .promo__feat-list {
     gap: 6rem;
     grid-template-columns: repeat(4, auto);
   }
 
+  .promo__feat-list li p {
+    max-width: 155px;
+  }
+}
+@media (min-width: 1340px) {
   .promo__feat-list li p {
     max-width: 100%;
   }
@@ -1602,16 +1604,15 @@ button {
   .publish-tabs__cards-list {
     padding: 3.125rem 0;
     max-width: 100%;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 270px);
   }
 }
 @media (min-width: 767px) {
   .publish-tabs__cards-list {
     gap: 2rem;
-    grid-template-columns: repeat(2, 270px);
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   .publish-tabs__cards-list {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -1695,6 +1696,11 @@ button {
     padding-bottom: 120px;
   }
 }
+@media (min-width: 767px) {
+  .benefits-section {
+    padding-bottom: 150px;
+  }
+}
 @media (min-width: 1340px) {
   .benefits-section {
     padding-top: 90px;
@@ -1712,8 +1718,6 @@ button {
 }
 .benefits-feat-list {
   text-align: left;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1730,6 +1734,10 @@ button {
 @media (min-width: 1024px) {
   .benefits-feat-list {
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1340px) {
+  .benefits-feat-list {
     gap: 2.1875rem;
   }
 }
@@ -1784,16 +1792,31 @@ button {
 
 .benefits-feat-list__item-title {
   text-transform: uppercase;
-  font-size: 1.5rem;
-  line-height: 1.8125rem;
+  font-size: 1.25rem;
+  line-height: 1.2;
 }
 
+@media (min-width: 1240px) {
+  .benefits-feat-list__item-title {
+    font-size: 1.5rem;
+  }
+}
 .benefits-feat-list__item-text {
   font-weight: 500;
   font-size: 1rem;
-  line-height: 1.125rem;
+  line-height: 1.13;
 }
 
+@media (min-width: 667px) {
+  .benefits-feat-list__item-text {
+    font-size: 0.875rem;
+  }
+}
+@media (min-width: 767px) {
+  .benefits-feat-list__item-text {
+    font-size: 1rem;
+  }
+}
 .order-section {
   padding-top: 78px;
   padding-bottom: 110px;
@@ -1845,10 +1868,10 @@ button {
 }
 
 .order-item__link {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 133px;
-          flex: 1 1 133px;
-  width: 133px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 150px;
+          flex: 0 0 150px;
+  width: 150px;
   text-align: left;
   margin-right: 17px;
   margin-left: 24px;
@@ -1856,10 +1879,20 @@ button {
   text-overflow: ellipsis;
 }
 
+.order-item__country {
+  text-align: left;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 130px;
+          flex: 0 0 130px;
+  width: 130px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .order-item__img {
   max-width: initial;
   margin-right: 12px;
-  margin-left: 65px;
+  margin-left: 30px;
 }
 
 .order-item__country-code {
@@ -1920,8 +1953,9 @@ button {
     gap: 2.5rem;
   }
 }
-@media (min-width: 1240px) {
+@media (min-width: 1024px) {
   .country-list {
+    gap: 1rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1931,6 +1965,10 @@ button {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+}
+@media (min-width: 1240px) {
+  .country-list {
     gap: 1.5rem;
   }
 }
@@ -1996,11 +2034,11 @@ button {
   }
 }
 .contact-section {
-  text-align: center;
   color: #333333;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: var(--grey-200);
+  text-align: left;
 }
 
 @media (min-width: 667px) {
@@ -2009,26 +2047,27 @@ button {
     padding-bottom: 80px;
   }
 }
-@media (min-width: 1280px) {
+@media (max-width: 1280px) {
   .contact-section {
-    text-align: left;
+    text-align: center;
   }
 }
 .contact-section__container {
   display: grid;
-  gap: 1.25rem;
+  grid-template-columns: 1fr minmax(auto, 586px);
+  gap: 2.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
 }
 
-@media (min-width: 1280px) {
+@media (max-width: 1280px) {
   .contact-section__container {
-    grid-template-columns: 1fr minmax(auto, 586px);
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 2.5rem;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
   }
 }
 .contact-section__mobile-title-wrap {

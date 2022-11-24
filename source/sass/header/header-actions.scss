@@ -4,14 +4,11 @@
   justify-content: flex-start;
   gap: 40px;
 
- @media (max-width: 1024px) {
+  @media (max-width: 1024px) {
     display: none;
   }
 }
 
 .header-actions__button-publica {
   padding: 11px 43px;
-}
-
-.header-actions__lang-select {
 }

@@ -17,6 +17,10 @@
     padding-bottom: 120px;
   }
 
+  @media (min-width: $width-tablet) {
+    padding-bottom: 150px;
+  }
+
   @media (min-width: $width-desktop) {
     padding-top: 90px;
     padding-bottom: 190px;
@@ -33,19 +37,20 @@
 
 .benefits-feat-list {
   text-align: left;
-  // display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   display: grid;
   grid-template-columns: 265px;
   gap: rem(24px);
 
-  @media (min-width:$width-mobile-h){
+  @media (min-width: $width-mobile-h) {
     grid-template-columns: repeat(2, 265px);
   }
 
   @media (min-width: 1024px) {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media (min-width: $width-desktop) {
     gap: rem(35px);
   }
 }
@@ -107,12 +112,24 @@
 
 .benefits-feat-list__item-title {
   text-transform: uppercase;
-  font-size: rem(24px);
-  line-height: rem(29px);
+  font-size: rem(20px);
+  line-height: 1.2;
+
+  @media (min-width: $width-tablet-h) {
+    font-size: rem(24px);
+  }
 }
 
 .benefits-feat-list__item-text {
   font-weight: 500;
   font-size: rem(16px);
-  line-height: rem(18px);
+  line-height: 1.13;
+
+  @media (min-width: $width-mobile-h) {
+    font-size: rem(14px);
+  }
+
+  @media (min-width: $width-tablet) {
+    font-size: rem(16px);
+  }
 }

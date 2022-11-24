@@ -42,7 +42,7 @@ mixin orderSection()
             +appButton('primary', 'link', '#contact', 'Buy').order-item__btn
             p= item.price
             p.order-item__link= item.link
-            p= item.country
+            p.order-item__country= item.country
             +imgWebp('flag', `flag-${item.flag}`, 'png', 36, 36, `${item.country}`).order-item__img
             p.order-item__country-code= item.flag
             p.order-item__stat= item.one

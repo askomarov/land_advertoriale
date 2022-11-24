@@ -99,6 +99,7 @@ const pugToHtml = () => {
     .pipe(htmlValidator.analyzer())
     .pipe(htmlValidator.reporter())
     .pipe(cached("pug"))
+    .pipe(beautify.html({ indent_size: 2 }))
     .pipe(gulp.dest("dist"));
 };
 

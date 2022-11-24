@@ -24,7 +24,6 @@
 
   p {
     font-weight: 500;
-    font-size: rem(24px);
     font-size: clamp(1rem, 4vw, rem(24px));
     line-height: rem(29px);
     max-width: 740px;
@@ -75,10 +74,18 @@
     }
   }
 
-  @media (min-width: 1120px) {
+  @media (min-width: 1024px) {
     gap: 6rem;
     grid-template-columns: repeat(4, auto);
 
+    li {
+      p {
+        max-width: 155px;
+      }
+    }
+  }
+
+  @media (min-width: $width-desktop) {
     li {
       p {
         max-width: 100%;

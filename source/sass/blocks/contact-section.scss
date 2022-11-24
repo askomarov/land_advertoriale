@@ -1,29 +1,30 @@
 .contact-section {
-  text-align: center;
   color: #333333;
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: var(--grey-200);
+  text-align: left;
 
   @media (min-width: $width-mobile-h) {
     padding-top: 110px;
     padding-bottom: 80px;
   }
 
-  @media (min-width: 1280px) {
-    text-align: left;
+  @media (max-width: 1280px) {
+    text-align: center;
   }
 }
 
 .contact-section__container {
   display: grid;
-  gap: rem(20px);
+  grid-template-columns: 1fr minmax(auto, 586px);
+  gap: rem(40px);
+  justify-content: space-between;
+  align-items: end;
 
-  @media (min-width: 1280px) {
-    grid-template-columns: 1fr minmax(auto, 586px);
-    justify-content: space-between;
-    gap: rem(40px);
-    align-items: end;
+  @media (max-width: 1280px) {
+    grid-template-columns: 1fr;
+    gap: rem(20px);
   }
 }
 

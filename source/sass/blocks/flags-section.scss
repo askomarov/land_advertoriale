@@ -35,10 +35,14 @@
     gap: rem(40px);
   }
 
-  @media (min-width: $width-tablet-h) {
+  @media (min-width: 1024px) {
+    gap: 1rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+  }
+
+  @media (min-width: $width-tablet-h) {
     gap: 1.5rem;
   }
 }
