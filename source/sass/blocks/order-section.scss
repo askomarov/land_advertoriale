@@ -29,7 +29,7 @@
 
 .order-item {
   min-width: 100%;
-  padding: 18px 46px 16px 25px;
+  padding: 18px 25px 16px 25px;
   display: inline-flex;
   align-items: center;
   justify-content: flex-start;
@@ -37,15 +37,15 @@
 }
 
 .order-item__btn {
-  margin-right: 24px;
-  padding-inline: 34px;
+  margin-right: 20px;
+  padding-inline: 26px;
   font-size: rem(16px);
   line-height: rem(20px);
 }
 
 .order-item__link {
-  flex: 0 0 150px;
-  width: 150px;
+  flex: 0 0 185px;
+  width: 185px;
   text-align: left;
   margin-right: 17px;
   margin-left: 24px;
@@ -53,23 +53,31 @@
   text-overflow: ellipsis;
 }
 
+.order-item__price {
+  text-align: left;
+  flex: 0 0 60px;
+  width: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .order-item__country {
   text-align: left;
-  flex: 0 0 130px;
-  width: 130px;
+  flex: 0 0 145px;
+  width: 145px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .order-item__img {
   max-width: initial;
-  margin-right: 12px;
-  margin-left: 30px;
+  margin-right: 16px;
+  margin-left: 16px;
 }
 
 .order-item__country-code {
   text-transform: uppercase;
-  margin-right: 68px;
+  margin-right: 16px;
 }
 
 

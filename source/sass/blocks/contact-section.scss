@@ -50,6 +50,7 @@
   justify-self: center;
 
   @media (min-width: $width-mobile-h) {
+    margin-left: 0;
     justify-self: start;
   }
 }

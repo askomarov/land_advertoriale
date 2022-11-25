@@ -3,7 +3,7 @@ mixin orderSection()
     var orderTable = [
       {
         price: "$150",
-        link: "Hotnews.ro",
+        link: "12345123451234512345",
         country: "Romania",
         flag: "ro",
         one: 90,
@@ -14,7 +14,7 @@ mixin orderSection()
       {
         price: "$150",
         link: "Hotnews.ro",
-        country: "Romania",
+        country: "12345123451234512345",
         flag: "ro",
         one: 90,
         two: 77,
@@ -39,8 +39,8 @@ mixin orderSection()
       .order-table
         each item in orderTable
           .order-table__row.order-item
-            +appButton('primary', 'link', '#contact', 'Buy').order-item__btn
-            p= item.price
+            +appButton('primary', 'link', '#contact', 'Publica').order-item__btn
+            p.order-item__price= item.price
             p.order-item__link= item.link
             p.order-item__country= item.country
             +imgWebp('flag', `flag-${item.flag}`, 'png', 36, 36, `${item.country}`).order-item__img

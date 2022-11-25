@@ -1846,7 +1846,7 @@ button {
 
 .order-item {
   min-width: 100%;
-  padding: 18px 46px 16px 25px;
+  padding: 18px 25px 16px 25px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1861,17 +1861,17 @@ button {
 }
 
 .order-item__btn {
-  margin-right: 24px;
-  padding-inline: 34px;
+  margin-right: 20px;
+  padding-inline: 26px;
   font-size: 1rem;
   line-height: 1.25rem;
 }
 
 .order-item__link {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 150px;
-          flex: 0 0 150px;
-  width: 150px;
+      -ms-flex: 0 0 185px;
+          flex: 0 0 185px;
+  width: 185px;
   text-align: left;
   margin-right: 17px;
   margin-left: 24px;
@@ -1879,25 +1879,35 @@ button {
   text-overflow: ellipsis;
 }
 
+.order-item__price {
+  text-align: left;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60px;
+          flex: 0 0 60px;
+  width: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .order-item__country {
   text-align: left;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 130px;
-          flex: 0 0 130px;
-  width: 130px;
+      -ms-flex: 0 0 145px;
+          flex: 0 0 145px;
+  width: 145px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .order-item__img {
   max-width: initial;
-  margin-right: 12px;
-  margin-left: 30px;
+  margin-right: 16px;
+  margin-left: 16px;
 }
 
 .order-item__country-code {
   text-transform: uppercase;
-  margin-right: 68px;
+  margin-right: 16px;
 }
 
 .order-item__stat {
@@ -2095,6 +2105,7 @@ button {
 
 @media (min-width: 667px) {
   .contact-section__feat-list {
+    margin-left: 0;
     justify-self: start;
   }
 }

@@ -24,6 +24,16 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 
   window.addEventListener("load", () => {
+    const langSelect = document.querySelector(".lang-select");
+    if (langSelect) {
+      const langLInks = langSelect.querySelectorAll(".lang-select__option a");
+      langLInks.forEach((link) => {
+        link.addEventListener("click", () => {
+          langSelect.classList.remove("active");
+        });
+      });
+    }
+
     initAccordion();
     initTabs();
     initHeader();
