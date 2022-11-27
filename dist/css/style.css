@@ -21,20 +21,6 @@
   font-weight: 600;
   font-style: normal;
 }
-:root {
-  --text-color: #333333;
-  --color-white: #ffffff;
-  --text-gray-color: #3d3d3d;
-  --text-black-color: #000000;
-  --primary-color: #ff8125;
-  --primary-color-500: #f1631c;
-  --primary-yellow: #fec224;
-  --grey-200: #ececec;
-  --border-color: #e0eff5;
-  --border-radius: 4px;
-  --box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
-}
-
 body {
   margin: 0;
   font-family: "Montserrat", "Arial", sans-serif;
@@ -234,8 +220,7 @@ button {
   }
 }
 .app-button--primary {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(-16%, #c24e13), to(#f6651d));
-  background: linear-gradient(180deg, #c24e13 -16%, #f6651d 100%);
+  background: var(--primary-button);
 }
 
 .app-button--secondary {
@@ -565,8 +550,7 @@ button {
   line-height: 20px;
   padding: 7px;
   width: 140px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff8447), to(#ff5500));
-  background: linear-gradient(180deg, #ff8447 0%, #ff5500 100%);
+  background: var(--publish-button);
 }
 
 .publish-card__img-wrap {
@@ -629,7 +613,6 @@ button {
 }
 
 .lang-select__selected-img-wrap {
-  border: 2px solid var(--primary-color);
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -798,7 +781,8 @@ button {
 
 .form__button-submit {
   padding-block: 16px;
-  background: radial-gradient(90.91% 90.91% at 27.47% 90.91%, #c7551d 0%, #ff8b52 95.92%);
+  color: var(--color-white);
+  background: var(--submit-button);
 }
 
 .logo__word {
@@ -811,8 +795,7 @@ button {
 .logo__nums {
   font-size: 1.875rem;
   font-weight: 700;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #e15f1e), to(#ff5500));
-  background: linear-gradient(180deg, #e15f1e 25%, #ff5500 100%);
+  background: var(--logo-nums-bg);
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1665,8 +1648,7 @@ button {
 }
 
 .tabs-controls__active-tab {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff8447), to(#ff5500));
-  background: linear-gradient(180deg, #ff8447 0%, #ff5500 100%);
+  background: var(--publish-button);
   border-radius: 4px;
   height: calc(100% + 4px);
   position: absolute;
@@ -1926,8 +1908,7 @@ button {
 .flags-section {
   color: var(--color-white);
   padding-block: 1.25rem;
-  background-color: var(--grey-200);
-  background-image: radial-gradient(88.65% 1908.57% at 7.08% 82.42%, #f88430 0%, #ff5a09 58.52%, #d6581a 100%);
+  background: var(--flag-section-bg);
 }
 
 @media (min-width: 767px) {

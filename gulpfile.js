@@ -166,7 +166,7 @@ const images = () => {
 
 const copy = () => {
   return gulp
-    .src(["source/**/*.ico", "source/fonts/**"], {
+    .src(["source/**/*.ico", "source/fonts/**", "source/css/variables.css"], {
       base: "source",
     })
     .pipe(gulp.dest("dist"));

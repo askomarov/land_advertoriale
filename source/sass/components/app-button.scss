@@ -26,7 +26,7 @@
 }
 
 .app-button--primary {
-  background: linear-gradient(180deg, #c24e13 -16%, #f6651d 100%);
+  background: var(--primary-button);
 }
 
 .app-button--secondary {

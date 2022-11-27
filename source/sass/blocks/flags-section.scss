@@ -1,13 +1,7 @@
 .flags-section {
   color: var(--color-white);
   padding-block: rem(20px);
-  background-color: var(--grey-200);
-  background-image: radial-gradient(
-    88.65% 1908.57% at 7.08% 82.42%,
-    #f88430 0%,
-    #ff5a09 58.52%,
-    #d6581a 100%
-  );
+  background: var(--flag-section-bg);
 
   @media (min-width: $width-tablet) {
     padding-block: rem(24px);

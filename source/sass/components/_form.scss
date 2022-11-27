@@ -47,5 +47,6 @@
 
 .form__button-submit {
   padding-block: 16px;
-  background: radial-gradient(90.91% 90.91% at 27.47% 90.91%, #c7551d 0%, #ff8b52 95.92%);
+  color: var(--color-white);
+  background: var(--submit-button);
 }
