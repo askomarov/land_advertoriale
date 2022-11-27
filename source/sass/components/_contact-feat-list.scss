@@ -10,45 +10,14 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
-  &::before {
-    content: "";
-    display: block;
-    flex: 0 0 51px;
-    width: 51px;
-    height: 51px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 40px;
-  }
 }
 
-.contact-feat-list__item--prices {
-  &::before {
-    background-image: url("../img/contact/feat-1.svg");
-  }
-}
-
-.contact-feat-list__item--premium {
-  &::before {
-    background-image: url("../img/contact/feat-2.svg");
-  }
-}
-
-.contact-feat-list__item--traffic {
-  &::before {
-    background-image: url("../img/contact/feat-3.svg");
-  }
-}
-
-.contact-feat-list__item--target {
-  &::before {
-    background-image: url("../img/contact/feat-4.svg");
-  }
-}
-
-.contact-feat-list__item--brand {
-  &::before {
-    background-image: url("../img/contact/feat-5.svg");
-  }
+.contact-feat-list__item-icon {
+  content: "";
+  display: block;
+  flex: 0 0 51px;
+  width: 51px;
+  height: 51px;
+  margin-right: 40px;
+  color: var(--icon-contact-color);
 }

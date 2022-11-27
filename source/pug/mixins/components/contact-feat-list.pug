@@ -26,4 +26,5 @@ mixin contact-feat-list()
   ul.contact-feat-list(class!=attributes.class)
     each item in featList
       li.contact-feat-list__item(class=`contact-feat-list__item--${item.modif}`)
+        +icon(`feat-${item.modif}` , 51, 51).contact-feat-list__item-icon
         p= item.text
